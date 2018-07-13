@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RdR-XJ-WBd" customClass="LoadingView" customModule="Testfy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-eR-OOW">
+                    <rect key="frame" x="125" y="281" width="125" height="125"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="9Gu-Nz-cBM"/>
+                        <constraint firstAttribute="height" constant="125" id="JD3-Qu-MCg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Y1i-eR-OOW" firstAttribute="centerY" secondItem="9Pl-4c-hSI" secondAttribute="centerY" id="9xz-Nv-5ZZ"/>
+                <constraint firstItem="Y1i-eR-OOW" firstAttribute="centerX" secondItem="9Pl-4c-hSI" secondAttribute="centerX" id="fpR-BE-ZoV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Pl-4c-hSI"/>
+            <connections>
+                <outlet property="container" destination="Y1i-eR-OOW" id="f0G-1H-YDL"/>
+            </connections>
+            <point key="canvasLocation" x="-539" y="-337"/>
+        </view>
+    </objects>
+</document>

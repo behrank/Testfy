@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCellReuse" rowHeight="110" id="sBt-bs-J4h" customClass="TweetCell" customModule="Testfy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sBt-bs-J4h" id="CS7-WC-Jbg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-5a-dgT">
+                        <rect key="frame" x="16" y="11" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="FEV-Oc-VhS"/>
+                            <constraint firstAttribute="width" constant="42" id="W1c-pM-aDU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="21"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.1764705882" green="0.61568627450000002" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peM-ID-t4S">
+                        <rect key="frame" x="66" y="11" width="285" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="KOa-Ks-j8b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkF-yo-yK1">
+                        <rect key="frame" x="66" y="33" width="285" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="s3M-8S-d9y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXZ-I2-Szp">
+                        <rect key="frame" x="66" y="57" width="285" height="28"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="L7Q-7m-bnO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OkF-yo-yK1" firstAttribute="leading" secondItem="K1B-5a-dgT" secondAttribute="trailing" constant="8" id="4Al-C3-tSS"/>
+                    <constraint firstItem="VXZ-I2-Szp" firstAttribute="top" secondItem="OkF-yo-yK1" secondAttribute="bottom" constant="8" id="Nmc-db-jNJ"/>
+                    <constraint firstItem="K1B-5a-dgT" firstAttribute="leading" secondItem="CS7-WC-Jbg" secondAttribute="leadingMargin" id="WBW-SK-BxA"/>
+                    <constraint firstItem="peM-ID-t4S" firstAttribute="leading" secondItem="K1B-5a-dgT" secondAttribute="trailing" constant="8" id="WQg-K4-3AQ"/>
+                    <constraint firstItem="OkF-yo-yK1" firstAttribute="top" secondItem="peM-ID-t4S" secondAttribute="bottom" constant="4" id="a8B-uJ-xrT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VXZ-I2-Szp" secondAttribute="trailing" constant="8" id="b5L-7S-K6y"/>
+                    <constraint firstItem="peM-ID-t4S" firstAttribute="top" secondItem="CS7-WC-Jbg" secondAttribute="topMargin" id="bM3-00-YuO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VXZ-I2-Szp" secondAttribute="bottom" constant="14" id="bd9-If-p9G"/>
+                    <constraint firstItem="K1B-5a-dgT" firstAttribute="top" secondItem="CS7-WC-Jbg" secondAttribute="topMargin" id="tMo-rc-n5s"/>
+                    <constraint firstItem="VXZ-I2-Szp" firstAttribute="leading" secondItem="CS7-WC-Jbg" secondAttribute="leadingMargin" constant="50" id="xRV-dn-Q3K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OkF-yo-yK1" secondAttribute="trailing" constant="8" id="zD7-79-7rH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="peM-ID-t4S" secondAttribute="trailing" constant="8" id="ztu-QR-p8g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgUser" destination="K1B-5a-dgT" id="oti-HS-yZf"/>
+                <outlet property="lblTime" destination="OkF-yo-yK1" id="BX5-zP-clu"/>
+                <outlet property="lblUsername" destination="peM-ID-t4S" id="jC2-Oc-RjD"/>
+                <outlet property="txtTweet" destination="VXZ-I2-Szp" id="4ba-Db-8nN"/>
+            </connections>
+            <point key="canvasLocation" x="-252.5" y="-256"/>
+        </tableViewCell>
+    </objects>
+</document>
