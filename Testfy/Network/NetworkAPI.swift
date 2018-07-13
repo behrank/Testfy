@@ -12,8 +12,8 @@ import Moya
 
 enum NetworkAPI {
     case getFeed()
-    case getMoreFeed(_ data:Main.GetMoreFeed.Request)
-    case getSearchFeed(_ data:Main.GetSearchFeed.Request)
+    case getMoreFeed(data:Main.GetMoreFeed.Request)
+    case getSearchFeed(data:Main.GetSearchFeed.Request)
 }
 // MARK: - TargetType Protocol Implementation
 extension NetworkAPI: TargetType {

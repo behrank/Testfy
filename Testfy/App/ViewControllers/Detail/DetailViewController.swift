@@ -33,7 +33,7 @@ class DetailViewController: BaseViewController, DetailDisplayLogic
             lblTime.text = viewModel?.createdAt ?? ""
             txtTweet.text = viewModel?.text ?? ""
             lblLikeCount.text = "Favori: \(viewModel?.favoriteCount ?? 0)"
-            lblRetweetCount.text = "Favori: \(viewModel?.retweetCount ?? 0)"
+            lblRetweetCount.text = "Retweet: \(viewModel?.retweetCount ?? 0)"
         }
     }
     var imgUrl:String? {

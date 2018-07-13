@@ -23,7 +23,7 @@ class MainWorker
     }
     func getSearchFeed(req: Main.GetSearchFeed.Request,completion:@escaping (Main.FeedViewModel)->Void,failure:@escaping (String)->Void) {
         
-        let getFeed:NetworkAPI = NetworkAPI.getSearchFeed(req)
+        let getFeed:NetworkAPI = NetworkAPI.getSearchFeed(data:req)
         
         NetworkProvider.shared.call(target: getFeed, completion: { (res:Main.GetSearchFeed.Response) in
             
@@ -50,7 +50,7 @@ class MainWorker
     
     func getMoreFeed(_ data:Main.GetMoreFeed.Request,completion:@escaping (Main.FeedViewModel)->Void,failure:@escaping (String)->Void) {
         
-        let getFeed:NetworkAPI = NetworkAPI.getMoreFeed(data)
+        let getFeed:NetworkAPI = NetworkAPI.getMoreFeed(data:data)
         debugPrint("Get More triggered")
         NetworkProvider.shared.call(target: getFeed, completion: { (res:[TweetModel]) in
             

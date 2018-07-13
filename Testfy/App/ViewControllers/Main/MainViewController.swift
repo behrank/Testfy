@@ -78,6 +78,7 @@ class MainViewController: BaseViewController, MainDisplayLogic
 extension MainViewController {
     func displayTweets(_ data: Main.FeedViewModel) {
         viewModel = data.data ?? []
+        
         DispatchQueue.main.async {
             self.tableTweets.reloadData {
                 debugPrint("Tweets reloaded")
