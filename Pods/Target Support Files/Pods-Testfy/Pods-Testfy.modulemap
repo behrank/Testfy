@@ -1,0 +1,6 @@
+framework module Pods_Testfy {
+  umbrella header "Pods-Testfy-umbrella.h"
+
+  export *
+  module * { export * }
+}
